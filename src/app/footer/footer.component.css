@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  background-image: linear-gradient(135deg, #fec180, #ff8993);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: Product sans;
+  text-align: center;
+  color: #fff;
+}
+
+.section h2 {
+  display: block;
+  margin-top: 50px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.section .tech-icon {
+  position: relative;
+  padding: 48px;
+}
+
+.section .tech-name {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1rem;
+  transform: translateY(-50%);
+  text-align: center;
+  text-transform: capitalize;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+
+.section .tech-icon:hover .tech-name {
+  cursor: pointer;
+  visibility: visible;
+  transform: translateY(0%);
+}
+
+.fab {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+[class^="fab"]::before {
+  font-size: 64px;
+}
+
+.section p {
+  position: relative;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  margin-top: 20px;
+  display: block;
+}

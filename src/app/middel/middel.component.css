@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  font-family: Product sans;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.white {
+  background-color: #fff;
+  color: black;
+}
+
+.section h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: revert;
+  letter-spacing: 1.5px;
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.section .tech-icon {
+  position: relative;
+  padding: 48px;
+}
+
+.section .tech-name {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1rem;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: all 0.2s linear;
+}
+
+[class^="devicon"]::before {
+  font-size: 64px;
+}
+
+.section .tech-icon:hover .tech-name {
+  cursor: pointer;
+  visibility: visible;
+  transform: translateY(0%);
+}
