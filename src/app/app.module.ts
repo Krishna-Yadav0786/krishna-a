@@ -7,9 +7,14 @@ import { MiddelComponent } from './middel/middel.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MiddelComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MiddelComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent],
+  bootstrap: [AppComponent, HeaderComponent, MiddelComponent, FooterComponent],
 })
 export class AppModule {}

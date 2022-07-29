@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other s
 */
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+/* @import "../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
 
-@import url("http://fonts.cdnfonts.com/css/product-sans");
 @import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
+
+@font-face {
+  font-family: "Product sans";
+  src: url("./assets/fonts/Product Sans Regular.ttf");
+}
